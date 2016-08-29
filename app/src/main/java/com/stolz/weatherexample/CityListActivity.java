@@ -10,7 +10,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 
 public class CityListActivity extends AbstractActivity {
 
@@ -44,10 +43,10 @@ public class CityListActivity extends AbstractActivity {
         builder.setMessage("Type in a zip code to add it to the list.");
 
         LayoutInflater inflater = getLayoutInflater();
-        View dialoglayout = inflater.inflate(R.layout.dialog_add_city, null);
-        final EditText zipCodeEditText = (EditText) dialoglayout.findViewById(R.id.zipcode_input);
+        View dialogLayout = inflater.inflate(R.layout.dialog_add_city, null);
+        final EditText zipCodeEditText = (EditText) dialogLayout.findViewById(R.id.zipcode_input);
 
-        builder.setView(dialoglayout);
+        builder.setView(dialogLayout);
 
         builder.setPositiveButton("Create", new DialogInterface.OnClickListener() {
             @Override

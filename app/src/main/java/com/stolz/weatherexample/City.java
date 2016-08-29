@@ -1,8 +1,5 @@
 package com.stolz.weatherexample;
 
-
-import java.util.UUID;
-
 public class City {
 
     private int mZipcode;
@@ -17,10 +14,6 @@ public class City {
 
     public int getZipcode() {
         return mZipcode;
-    }
-
-    public void setZipcode(int mZipcode) {
-        this.mZipcode = mZipcode;
     }
 
     public String getName() {
